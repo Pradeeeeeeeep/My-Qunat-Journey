@@ -1,0 +1,22 @@
+[project]
+name = "mini-project-resume-analyzer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pradeep", email = "246137392+Pradeeeeeeeep@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "groq>=1.7.0",
+    "pydentic>=0.0.1.dev3",
+    "pypdf>=6.19.0",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+mini-project-resume-analyzer = "mini_project_resume_analyzer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
